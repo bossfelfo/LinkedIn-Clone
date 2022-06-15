@@ -1,13 +1,13 @@
 import "./Widget.css";
+
 import React from "react";
-import InfoIcon from "@mui/icons-material/Info";
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
+import { Info, FiberManualRecord } from "@mui/icons-material";
 
 function Widget() {
   const newsArticle = (heading, subtitle) => (
     <div className="widgets__article">
       <div className="widgets__articleLeft">
-        <FiberManualRecordIcon />
+        <FiberManualRecord />
       </div>
       <div className="widgets__articleRight">
         <h4>{heading}</h4>
@@ -20,7 +20,7 @@ function Widget() {
     <div className="widgets">
       <div className="widgets__header">
         <h2>LinkedIn News</h2>
-        <InfoIcon />
+        <Info />
       </div>
 
       {newsArticle("bossFelfo is Tech award", "Top news - 3542 readers")}

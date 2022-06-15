@@ -1,10 +1,9 @@
 import "./Login.css";
+import { auth } from "@firebase";
+import { login } from "@features/userSlice";
 
-import { auth } from "../../firebase";
 import { useDispatch } from "react-redux";
 import React, { useState } from "react";
-
-import { login } from "@features/userSlice";
 import {
   updateProfile,
   createUserWithEmailAndPassword,

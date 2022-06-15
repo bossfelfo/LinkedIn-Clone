@@ -3,7 +3,7 @@ import InputOption from "./InputOption";
 import Post from "./Post";
 
 import React, { useState, useEffect } from "react";
-import { db } from "../../firebase";
+import { db } from "@firebase";
 import {
   Create,
   Image,
